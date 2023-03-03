@@ -1,0 +1,16 @@
+
+.nav-item {
+    background-color: #3a3a3a;
+    color: #ffffff;
+  }
+  
+  /* Add a shadow to the navigation bar */
+  .navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Remove the bottom border from the navigation bar */
+  .navbar {
+    border: none;
+  }
+
