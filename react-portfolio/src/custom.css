@@ -1,16 +1,94 @@
 
-.nav-item {
-    background-color: #3a3a3a;
-    color: #ffffff;
-  }
-  
-  /* Add a shadow to the navigation bar */
-  .navbar {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Remove the bottom border from the navigation bar */
-  .navbar {
-    border: none;
-  }
+/*  Navigation bar styling */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  padding: 10px;
+  font-size: 18px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
 
+.nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav a:hover,
+.nav a.active {
+  background-color: #333;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.nav-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* mobile first design  */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+  }
+  .nav a {
+    margin: 5px 0;
+  }
+  .nav-item:first-of-type .nav-link {
+    border-radius: 5px 5px 0 0;
+  }
+  .nav-item:last-of-type .nav-link {
+    border-radius: 0 0 5px 5px;
+  }
+}
+/* home page */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./snowy-hills.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.home-container {
+  max-width: 800px;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  color: #ffffff81;
+}
+
+.home p {
+  font-size: 24px;
+  margin-bottom: 50px;
+  line-height: 1.5;
+  color: #000000a5;
+}
+
+.home button {
+  background-color: #00000084;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home button:hover {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333;
+  transition: all 0.3s ease;
+}
