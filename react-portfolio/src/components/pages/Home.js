@@ -8,7 +8,7 @@ function Home() {
         <p>
           Front-End Developer
         </p>
-        <button>Learn More</button>
+        <button>projects</button>
       </div>
     </div>
   );

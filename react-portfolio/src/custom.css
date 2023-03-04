@@ -67,6 +67,10 @@
   margin-bottom: 30px;
   color: #ffffff81;
 }
+.home h1:hover {
+  color: #ffffff;
+  transition: all 1s ease;
+}
 
 .home p {
   font-size: 24px;
@@ -94,8 +98,52 @@
 }
 /* footer */
 footer {
-  background-color: #000000;
-  color: rgb(255, 255, 255);
-  padding: 10px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
+
+.footer-left {
+  display: flex;
+}
+
+.footer-left nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-left nav li {
+  margin: 0 10px;
+}
+
+.footer-left nav a {
+  color: #666;
+  text-decoration: none;
+}
+
+.footer-left nav a.active {
+  color: #000;
+  font-weight: bold;
+}
+
+.footer-right ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+.footer-right li {
+  margin: 0 10px;
+}
+
+.footer-right a {
+  color: #666;
+  text-decoration: none;
+}
+
