@@ -1,25 +1,3 @@
-
-/* for sticky footer */
-html {
-  height: 100%;
-  box-sizing: border-box;
-}
-
-main {
-  flex: 1;
-}
-
-/* background */
-body {
-  background-image: url("./snowy-hills.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -88,13 +66,7 @@ body {
   }
 }
 
-.homeCTA {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-}
+
 /* home page */
 .home {
   display: flex;
@@ -149,52 +121,36 @@ body {
 }
 
 /* footer */
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f2f2f2;
-  padding: 20px;
+.footer {
+  background-color: #f8f9fa;
 }
-
-.footer-left {
-  display: flex;
-}
-
-.footer-left nav ul {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.footer-left nav li {
-  margin: 0 10px;
-}
-
-.footer-left nav a {
-  color: #666;
+.footer a {
+  color: #ffffff;
   text-decoration: none;
+  font-weight: 600;
+}
+.footer a.border {
+  border: 2px solid #212529;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: all 0.3s ease-in-out;
 }
 
-.footer-left nav a.active {
-  color: #000;
-  font-weight: bold;
+.footer a.border:hover {
+  background-color: #0570db;
+  color: #f8f9fa;
+  /* Increase specificity */
+  box-shadow: 0 0 0 2px #212529 inset;
+}
+/* Set the footer to be positioned at the bottom of the viewport */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
-.footer-right ul {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  justify-content: flex-end;
-}
-
-.footer-right li {
-  margin: 0 10px;
-}
-
-.footer-right a {
-  color: #666;
-  text-decoration: none;
+/* Give the main content a bottom margin to account for the height of the footer */
+.main-content {
+  margin-bottom: 100px; /* Change this value to match the height of your footer */
 }

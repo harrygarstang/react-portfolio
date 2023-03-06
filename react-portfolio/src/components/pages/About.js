@@ -1,11 +1,23 @@
 import React from "react";
-
+import Badge from 'react-bootstrap/Badge';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 function About() {
   return (
-    <div className="container">
-      <h1>About Page</h1>
-      <a href="././components/Harry-Garstang-CV.pdf" download> Download my CV! </a>
-    </div>
+    <Container style={{ marginTop: 30 }}>
+      <Row>
+        <Col size="md-12">
+          <div>
+            <h1>
+              <Badge bg="secondary" as="Button">
+                A little bit more about me 🙂
+              </Badge>
+            </h1>
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

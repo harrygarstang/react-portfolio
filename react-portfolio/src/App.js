@@ -6,18 +6,21 @@ import About from './components/pages/About';
 import Projects from './components/pages/Projects';
 import Contact from './components/pages/Contact';
 import Footer from './components/Footer';
+import Wrapper from './components/Wrapper';
 
 function App() {
     return (
         <Router>
             <div>
                 <NavigationTabs />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="about" element={<About />} />
-                    <Route path="projects" element={<Projects />} />
-                    <Route path="contact" element={<Contact />} />
-                </Routes>
+                <Wrapper>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="about" element={<About />} />
+                        <Route path="projects" element={<Projects />} />
+                        <Route path="contact" element={<Contact />} />
+                    </Routes>
+                </Wrapper>
                 <Footer />
             </div>
         </Router>
