@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 function NavigationTabs() {
   return (
     <ul className="nav nav-tabs">
-      <li className="nav-item">
+      <li className="nav-item nav1">
         <NavLink
           to="/"
           end
@@ -15,7 +15,7 @@ function NavigationTabs() {
           Home
         </NavLink>
       </li>
-      <li className="nav-item">
+      <li className="nav-item nav2">
         <NavLink
           to="about"
           className={({ isActive }) =>
@@ -25,7 +25,7 @@ function NavigationTabs() {
           About
         </NavLink>
       </li>
-      <li className="nav-item">
+      <li className="nav-item nav3">
         <NavLink
           to="projects"
           className={({ isActive }) =>
@@ -35,7 +35,7 @@ function NavigationTabs() {
           Projects
         </NavLink>
       </li>
-      <li className="nav-item">
+      <li className="nav-item nav4">
         <NavLink
           to="contact"
           end
