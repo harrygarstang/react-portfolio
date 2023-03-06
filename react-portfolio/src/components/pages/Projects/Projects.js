@@ -2,6 +2,7 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
+import projectsData from './projectsData.json';
 import './Projects.css';
 
 function Projects() {
@@ -9,44 +10,33 @@ function Projects() {
     <div>
       <Container className="projects-container">
         <Row>
-          <Card className="project-card col-md-4">
-            <Card.Img variant="top" src="../src/snowy-hills.jpg" />
-            <Card.Body>
-              <Card.Title>Coffee Curator</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-              </Card.Text>
-              <a href="#" className="btn btn-primary">View Project</a>
-            </Card.Body>
-          </Card>
-
-          <Card className="project-card col-md-4">
-            <Card.Img variant="top" src="../src/snowy-hills.jpg" />
-            <Card.Body>
-              <Card.Title>Project 2</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-              </Card.Text>
-              <a href="#" className="btn btn-primary">View Project</a>
-            </Card.Body>
-          </Card>
-
-          <Card className="project-card col-md-4">
-            <Card.Img variant="top" src="../src/snowy-hills.jpg" />
-            <Card.Body>
-              <Card.Title>Project 3</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-              </Card.Text>
-              <a href="#" className="btn btn-primary">View Project</a>
-            </Card.Body>
-          </Card>
+          {projectsData.map(project => (
+            <Project
+              key={project.id}
+              title={project.title}
+              description={project.description}
+              image={project.image}
+              codeLink={project.codeLink}
+              deployLink={project.deployLink}
+            />
+          ))}
         </Row>
       </Container>
     </div>
+  );
+}
+
+function Project(props) {
+  return (
+    <Card className="project-card col-md-4">
+      <Card.Img variant="top" src={props.image} />
+      <Card.Body>
+        <Card.Title>{props.title}</Card.Title>
+        <Card.Text>{props.description}</Card.Text>
+        <a href={props.codeLink} className="btn btn-primary">View Code</a>
+        <a href={props.deployLink} className="btn btn-secondary">View Deployed Application</a>
+      </Card.Body>
+    </Card>
   );
 }
 

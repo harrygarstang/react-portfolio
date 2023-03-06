@@ -18,9 +18,6 @@ function Home() {
               <p>
                 Front-End Developer | Web Design
               </p>
-              <p>
-                Welcome to my portfolio website, where I showcase my latest projects and designs.
-              </p>
               <Link to="projects" role="button" className="btn btn-primary" style={{ backgroundColor: 'blue', color: '#fff', fontSize: '1.2rem', fontWeight: 'bold', borderRadius: '10px', padding: '10px 20px' }}>
                 View My Work
               </Link>

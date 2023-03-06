@@ -10,7 +10,7 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  background-color: #F94144;
+  background-color: #009d835b;
   /* add background color for the first block */
 }
 
@@ -25,7 +25,7 @@
 
 .nav1 a:hover,
 .nav1 a.active {
-  background-color: #F3722C;
+  background-color: #009d835b;
   color: #ffffff;
   transition: all 0.3s ease;
 }
@@ -217,7 +217,7 @@
   /* Increase specificity */
   box-shadow: 0 0 0 2px #212529 inset;
 }
-/* Set the footer to be positioned at the bottom of the viewport */
+/* Set the footer to be positioned at the bottom of the viewport
 .footer {
   position: fixed;
   left: 0;
@@ -226,9 +226,9 @@
 }
 
 /* Give the main content a bottom margin to account for the height of the footer */
-.main-content {
+/* .main-content {
   margin-bottom: 100px; /* Change this value to match the height of your footer */
-}
+
 
 .home-img {
   height: 200px;

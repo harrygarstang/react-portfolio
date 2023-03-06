@@ -13,9 +13,6 @@ function Footer() {
             <NavLink to="/" className="text-reset fw-bold border px-3 py-2">
               Home
             </NavLink>
-            <NavLink to="/about" className="text-reset fw-bold border px-3 py-2">
-              About Me
-            </NavLink>
             <NavLink to="/projects" className="text-reset fw-bold border px-3 py-2">
               Projects
             </NavLink>
@@ -26,13 +23,13 @@ function Footer() {
         </Col>
         <Col md="6" className="text-center py-3">
           <div className="d-flex justify-content-evenly align-items-center">
-            <a href="https://github.com/yourusername" className="text-reset fw-bold border px-3 py-2">
+            <a href="https://github.com/harrygarstang" className="text-reset fw-bold border px-3 py-2">
               GitHub
             </a>
-            <a href="mailto:youremail@example.com" className="text-reset fw-bold border px-3 py-2">
-              Email
+            <a href="mailto:harrygarstang2@gmail.com" className="text-reset fw-bold border px-3 py-2">
+              harrygarstang2@gmail.com
             </a>
-            <a href="https://www.linkedin.com/in/yourusername" className="text-reset fw-bold border px-3 py-2">
+            <a href="https://www.linkedin.com/in/harry-garstang/" className="text-reset fw-bold border px-3 py-2">
               LinkedIn
             </a>
           </div>

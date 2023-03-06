@@ -15,16 +15,6 @@ function NavigationTabs() {
           Home
         </NavLink>
       </li>
-      <li className="nav-item nav2">
-        <NavLink
-          to="about"
-          className={({ isActive }) =>
-            isActive ? 'nav-link active' : 'nav-link'
-          }
-        >
-          About
-        </NavLink>
-      </li>
       <li className="nav-item nav3">
         <NavLink
           to="projects"
