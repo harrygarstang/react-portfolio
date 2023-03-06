@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, Route, Routes } from 'react-router-dom';
 
 function Home() {
   return (
@@ -8,7 +9,9 @@ function Home() {
         <p>
           Front-End Developer
         </p>
-        <button>projects</button>
+        <Link to="projects" role="button" className="btn btn-link Wahey">
+          Take a look at some of my projects.
+        </Link>
       </div>
     </div>
   );

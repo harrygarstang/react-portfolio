@@ -2,11 +2,9 @@ import React from "react";
 
 function About() {
   return (
-    <div>
+    <div className="container">
       <h1>About Page</h1>
-      <p>
-        this is all about me
-      </p>
+      <a href="././components/Harry-Garstang-CV.pdf" download> Download my CV! </a>
     </div>
   );
 }
