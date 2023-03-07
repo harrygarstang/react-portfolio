@@ -3,9 +3,8 @@ In this portfolio, I showcase my skills and projects as a developer. The website
 
 ### How to use this program 
 
-* Access my deployed portfolio at the following url: https://harrygarstang.github.io/Workday-Planner/
+* Access my deployed portfolio at the following url: not yet avaliable
 
-![Image of my project](./images/workdayscheduler.png)
 
 ### What I have learnt 
 
