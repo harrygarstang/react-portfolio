@@ -1,43 +1,60 @@
+
+/* card css */
 .projects-container {
-    margin-top: 50px;
-  }
-  
+  margin-top: 50px;
+}
+
+.project-card {
+  border: none;
+  margin-bottom: 30px;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  border-radius: 5px 5px 0 0;
+}
+
+.project-card .card-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.project-card .card-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.project-card .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.project-card .btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+@media (max-width: 768px) {
   .project-card {
-    border: none;
-    margin-bottom: 30px;
+    margin-right: 0;
+    margin-left: 0;
   }
-  
-  .project-card:hover {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  
+}
+.project-card {
+  margin-bottom: 30px;
+}
+
+.project-card img {
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 767px) {
   .project-card img {
-    border-radius: 5px 5px 0 0;
+    height: 200px;
   }
-  
-  .project-card .card-title {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .project-card .card-text {
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-  
-  .project-card .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-  }
-  
-  .project-card .btn-primary:hover {
-    background-color: #0069d9;
-    border-color: #0062cc;
-  }
-  
-  @media (max-width: 768px) {
-    .project-card {
-      margin-right: 0;
-      margin-left: 0;
-    }
-  }
+}

@@ -2,7 +2,7 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
-import projectsData from './projectsData.json';
+import projectsData from './projectsData.js';
 import './Projects.css';
 
 function Projects() {
