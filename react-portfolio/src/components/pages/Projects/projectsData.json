@@ -12,7 +12,7 @@
     "title": "Workday Planner",
     "description": "This project is a dynamic work day planner enabling users to input their custom work hours and generate a planner for their work day. The planner consists of time blocks representing each hour of this work day, with text areas for the user to input notes for each hour.",
     "image": "../src/snowy-hills.jpg",
-    "link": "https://github.com/harrygarstang/Workday-Planner",
+    "codeLink": "https://github.com/harrygarstang/Workday-Planner",
     "buttonText": "View Code"
   },
   {

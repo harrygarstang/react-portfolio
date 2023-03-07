@@ -18,6 +18,7 @@ function Projects() {
               image={project.image}
               codeLink={project.codeLink}
               deployLink={project.deployLink}
+              buttonText={project.buttonText}
             />
           ))}
         </Row>
@@ -34,7 +35,7 @@ function Project(props) {
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>{props.description}</Card.Text>
         <a href={props.codeLink} className="btn btn-primary">View Code</a>
-        <a href={props.deployLink} className="btn btn-secondary">View Deployed Application</a>
+        <a href={props.deployLink} className="btn btn-secondary">{props.buttonText}</a>
       </Card.Body>
     </Card>
   );
