@@ -217,18 +217,6 @@
   /* Increase specificity */
   box-shadow: 0 0 0 2px #212529 inset;
 }
-/* Set the footer to be positioned at the bottom of the viewport
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-/* Give the main content a bottom margin to account for the height of the footer */
-/* .main-content {
-  margin-bottom: 100px; /* Change this value to match the height of your footer */
-
 
 .home-img {
   height: 200px;
