@@ -26,7 +26,7 @@ function Contact(props) {
               <h1>Contact Me</h1>
               <p>Feel free to reach out to me using any of the methods below:</p>
               <ul>
-                <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+                <li>Email: <a href="mailto:harrygarstang2@gmail.com">harrygarstang2@gmail.com</a></li>
                 <li>CV: <a href="../../../pdfs/Harry-Garstang-CV.pdf" target="_blank" rel="noopener noreferrer">Download PDF</a></li>
                 <li>Github: <a href="https://github.com/harrygarstang" target="_blank" rel="noopener noreferrer">Github Profile</a></li>
                 <li>LinkedIn: <a href="https://www.linkedin.com/in/harry-garstang/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></li>
